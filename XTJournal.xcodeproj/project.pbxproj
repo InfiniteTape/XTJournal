@@ -1,0 +1,280 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE14FEF6159A392C005E49D6 /* XTJEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE14FEF4159A392C005E49D6 /* XTJEditorViewController.m */; };
+		FE4B6BAE157E8E07009BAA44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4B6BAD157E8E07009BAA44 /* UIKit.framework */; };
+		FE4B6BB0157E8E07009BAA44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4B6BAF157E8E07009BAA44 /* Foundation.framework */; };
+		FE4B6BB2157E8E07009BAA44 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4B6BB1157E8E07009BAA44 /* CoreGraphics.framework */; };
+		FE4B6BB8157E8E08009BAA44 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE4B6BB6157E8E08009BAA44 /* InfoPlist.strings */; };
+		FE4B6BBA157E8E08009BAA44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4B6BB9157E8E08009BAA44 /* main.m */; };
+		FE4B6BBE157E8E08009BAA44 /* XTJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4B6BBD157E8E08009BAA44 /* XTJAppDelegate.m */; };
+		FE4B6BC1157E8E08009BAA44 /* XTJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4B6BC0157E8E08009BAA44 /* XTJViewController.m */; };
+		FEFE8590159A4A2600DE4CDB /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEFE858F159A4A2600DE4CDB /* Storyboard.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FE14FEF3159A392C005E49D6 /* XTJEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTJEditorViewController.h; sourceTree = "<group>"; };
+		FE14FEF4159A392C005E49D6 /* XTJEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTJEditorViewController.m; sourceTree = "<group>"; };
+		FE4B6BA9157E8E07009BAA44 /* XTJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE4B6BAD157E8E07009BAA44 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FE4B6BAF157E8E07009BAA44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FE4B6BB1157E8E07009BAA44 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FE4B6BB5157E8E08009BAA44 /* XTJournal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XTJournal-Info.plist"; sourceTree = "<group>"; };
+		FE4B6BB7157E8E08009BAA44 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FE4B6BB9157E8E08009BAA44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE4B6BBB157E8E08009BAA44 /* XTJournal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XTJournal-Prefix.pch"; sourceTree = "<group>"; };
+		FE4B6BBC157E8E08009BAA44 /* XTJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTJAppDelegate.h; sourceTree = "<group>"; };
+		FE4B6BBD157E8E08009BAA44 /* XTJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTJAppDelegate.m; sourceTree = "<group>"; };
+		FE4B6BBF157E8E08009BAA44 /* XTJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTJViewController.h; sourceTree = "<group>"; };
+		FE4B6BC0157E8E08009BAA44 /* XTJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTJViewController.m; sourceTree = "<group>"; };
+		FEFE858F159A4A2600DE4CDB /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE4B6BA6157E8E06009BAA44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE4B6BAE157E8E07009BAA44 /* UIKit.framework in Frameworks */,
+				FE4B6BB0157E8E07009BAA44 /* Foundation.framework in Frameworks */,
+				FE4B6BB2157E8E07009BAA44 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE4B6B9E157E8E06009BAA44 = {
+			isa = PBXGroup;
+			children = (
+				FE4B6BB3157E8E07009BAA44 /* XTJournal */,
+				FE4B6BAC157E8E07009BAA44 /* Frameworks */,
+				FE4B6BAA157E8E07009BAA44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE4B6BAA157E8E07009BAA44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE4B6BA9157E8E07009BAA44 /* XTJournal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE4B6BAC157E8E07009BAA44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE4B6BAD157E8E07009BAA44 /* UIKit.framework */,
+				FE4B6BAF157E8E07009BAA44 /* Foundation.framework */,
+				FE4B6BB1157E8E07009BAA44 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE4B6BB3157E8E07009BAA44 /* XTJournal */ = {
+			isa = PBXGroup;
+			children = (
+				FE4B6BBC157E8E08009BAA44 /* XTJAppDelegate.h */,
+				FE4B6BBD157E8E08009BAA44 /* XTJAppDelegate.m */,
+				FE4B6BBF157E8E08009BAA44 /* XTJViewController.h */,
+				FE4B6BC0157E8E08009BAA44 /* XTJViewController.m */,
+				FE4B6BB4157E8E08009BAA44 /* Supporting Files */,
+				FE14FEF3159A392C005E49D6 /* XTJEditorViewController.h */,
+				FE14FEF4159A392C005E49D6 /* XTJEditorViewController.m */,
+				FEFE858F159A4A2600DE4CDB /* Storyboard.storyboard */,
+			);
+			path = XTJournal;
+			sourceTree = "<group>";
+		};
+		FE4B6BB4157E8E08009BAA44 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE4B6BB5157E8E08009BAA44 /* XTJournal-Info.plist */,
+				FE4B6BB6157E8E08009BAA44 /* InfoPlist.strings */,
+				FE4B6BB9157E8E08009BAA44 /* main.m */,
+				FE4B6BBB157E8E08009BAA44 /* XTJournal-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE4B6BA8157E8E06009BAA44 /* XTJournal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE4B6BC7157E8E08009BAA44 /* Build configuration list for PBXNativeTarget "XTJournal" */;
+			buildPhases = (
+				FE4B6BA5157E8E06009BAA44 /* Sources */,
+				FE4B6BA6157E8E06009BAA44 /* Frameworks */,
+				FE4B6BA7157E8E06009BAA44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XTJournal;
+			productName = XTJournal;
+			productReference = FE4B6BA9157E8E07009BAA44 /* XTJournal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE4B6BA0157E8E06009BAA44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = FE4B6BA3157E8E06009BAA44 /* Build configuration list for PBXProject "XTJournal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FE4B6B9E157E8E06009BAA44;
+			productRefGroup = FE4B6BAA157E8E07009BAA44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE4B6BA8157E8E06009BAA44 /* XTJournal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE4B6BA7157E8E06009BAA44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE4B6BB8157E8E08009BAA44 /* InfoPlist.strings in Resources */,
+				FEFE8590159A4A2600DE4CDB /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE4B6BA5157E8E06009BAA44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE4B6BBA157E8E08009BAA44 /* main.m in Sources */,
+				FE4B6BBE157E8E08009BAA44 /* XTJAppDelegate.m in Sources */,
+				FE4B6BC1157E8E08009BAA44 /* XTJViewController.m in Sources */,
+				FE14FEF6159A392C005E49D6 /* XTJEditorViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FE4B6BB6157E8E08009BAA44 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE4B6BB7157E8E08009BAA44 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE4B6BC5157E8E08009BAA44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FE4B6BC6157E8E08009BAA44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE4B6BC8157E8E08009BAA44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XTJournal/XTJournal-Prefix.pch";
+				INFOPLIST_FILE = "XTJournal/XTJournal-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FE4B6BC9157E8E08009BAA44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XTJournal/XTJournal-Prefix.pch";
+				INFOPLIST_FILE = "XTJournal/XTJournal-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE4B6BA3157E8E06009BAA44 /* Build configuration list for PBXProject "XTJournal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE4B6BC5157E8E08009BAA44 /* Debug */,
+				FE4B6BC6157E8E08009BAA44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE4B6BC7157E8E08009BAA44 /* Build configuration list for PBXNativeTarget "XTJournal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE4B6BC8157E8E08009BAA44 /* Debug */,
+				FE4B6BC9157E8E08009BAA44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE4B6BA0157E8E06009BAA44 /* Project object */;
+}
