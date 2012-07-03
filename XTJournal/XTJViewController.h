@@ -10,4 +10,9 @@
 
 @interface XTJViewController : UIViewController
 
+@property (strong, nonatomic) NSMutableDictionary* dataStore;
+
+- (NSString *)dataFilePath;
+- (void)applicationWillResignActive:(NSNotification *)notification;
+
 @end

@@ -42,7 +42,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zad-gd-0LE" kind="push" id="XAN-7q-2ei"/>
+                                    <segue destination="zad-gd-0LE" kind="push" identifier="History" id="XAN-7q-2ei"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Jyx-Jw-5Ac">
@@ -57,7 +57,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="v2k-k7-Alf" kind="push" id="qN5-de-TOe"/>
+                                    <segue destination="v2k-k7-Alf" kind="push" identifier="Today" id="qN5-de-TOe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -128,18 +128,6 @@
             <point key="canvasLocation" x="403" y="521"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="XTJEditorViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/XTJEditorViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="titleBarText" candidateClass="UINavigationItem"/>
-            </relationships>
-        </class>
-        <class className="XTJViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/XTJViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

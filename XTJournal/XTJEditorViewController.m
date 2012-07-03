@@ -14,6 +14,7 @@
 
 @implementation XTJEditorViewController
 
+NSString *today;
 
 @synthesize titleBarText;
 @synthesize textView;
@@ -23,7 +24,8 @@
 {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"dd MMM yyyy"];
-    titleBarText.title = [formatter stringFromDate:date];
+    today = [formatter stringFromDate:date];
+    titleBarText.title = today;
     _date = date;
 }
 
@@ -36,7 +38,7 @@
         [textView becomeFirstResponder];
 }
 
-@synthesize text;
+@synthesize dataStore;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -60,6 +62,8 @@
                                              selector:@selector(keyboardWillHide:)
                                                  name:UIKeyboardWillHideNotification
                                                object:nil];
+    NSString *text = [dataStore objectForKey:today];
+    [textView setText:text];
     
     if(_initialEditMode)
     {
@@ -67,6 +71,14 @@
         NSRange range = NSMakeRange(textView.text.length - 1, 1);
         [textView scrollRangeToVisible:range];
     }
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [textView endEditing:YES];
+    [dataStore setValue:textView.text forKey:today];
+    	
 }
 
 - (void)viewDidUnload

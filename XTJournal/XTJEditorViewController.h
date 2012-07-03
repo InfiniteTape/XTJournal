@@ -11,7 +11,7 @@
 @interface XTJEditorViewController : UIViewController
 
 @property (strong, nonatomic) NSDate* date;
-@property (strong, nonatomic) NSString* text;
+@property (strong, nonatomic) NSMutableDictionary* dataStore;
 @property (nonatomic) bool initialEditMode;
 
 @property (strong, nonatomic) IBOutlet UINavigationItem* titleBarText;

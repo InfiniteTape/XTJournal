@@ -9,7 +9,11 @@
 #import "XTJViewController.h"
 #import "XTJEditorViewController.h"
 
+#define kFilename       @"data.plist"
+
 @implementation XTJViewController
+
+@synthesize dataStore;
 
 - (void)didReceiveMemoryWarning
 {
@@ -23,6 +27,18 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *filePath = [self dataFilePath];
+    if([[NSFileManager defaultManager] fileExistsAtPath:filePath])
+    {
+        dataStore = [[NSDictionary alloc] initWithContentsOfFile:filePath].mutableCopy;
+    }
+    else {
+        dataStore = [[NSMutableDictionary alloc] init];
+    }
+    
+    UIApplication *app = [UIApplication sharedApplication];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillResignActive:) name:UIApplicationWillResignActiveNotification object:app];
 }
 
 - (void)viewDidUnload
@@ -60,16 +76,41 @@
 
 	
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
+{	
     UIViewController *destination = segue.destinationViewController;
-    if([destination respondsToSelector:@selector(setDate:)])
+    if([segue.identifier isEqualToString:@"Today"])
     {
-        [destination setValue:[NSDate date] forKey:@"date"];
-    }
-    if([destination respondsToSelector:@selector(setInitialEditMode:)])
-    {
+        NSDate *dateNow = [NSDate date];
+        //dateNow = [dateNow dateByAddingTimeInterval:86400];
+        // This is a transition to the Edit Today mode.
+        // Leave the Date value as an NSDate for now. Eventually we'll want it for the Core Data implementation
+        [destination setValue:dateNow forKey:@"date"];
         //TODO: Fix this when Xcode 4.4 comes out.
         [destination setValue:[NSNumber numberWithBool:YES] forKey:@"initialEditMode"];
+        
+        NSString *dateAsString;
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"dd MMM yyyy"];
+        dateAsString = [formatter stringFromDate:dateNow];
+        if([dataStore objectForKey:dateAsString] == nil)
+            [dataStore setValue:@"" forKey:dateAsString];
+        [destination setValue:dataStore forKey:@"dataStore"];
+
+    }    
+}
+
+- (NSString *)dataFilePath
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES     );
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    return [documentsDirectory stringByAppendingPathComponent:kFilename];
+}
+
+- (void)applicationWillResignActive:(NSNotification *)notification
+{
+    if(dataStore != nil)
+    {
+        [dataStore writeToFile:[self dataFilePath] atomically:YES];
     }
 }
 
