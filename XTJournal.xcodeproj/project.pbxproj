@@ -15,6 +15,7 @@
 		FE4B6BBA157E8E08009BAA44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4B6BB9157E8E08009BAA44 /* main.m */; };
 		FE4B6BBE157E8E08009BAA44 /* XTJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4B6BBD157E8E08009BAA44 /* XTJAppDelegate.m */; };
 		FE4B6BC1157E8E08009BAA44 /* XTJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4B6BC0157E8E08009BAA44 /* XTJViewController.m */; };
+		FEC1E2BF15A3939000FA6901 /* XTJHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC1E2BE15A3939000FA6901 /* XTJHistoryViewController.m */; };
 		FEFE8590159A4A2600DE4CDB /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEFE858F159A4A2600DE4CDB /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,8 @@
 		FE4B6BBD157E8E08009BAA44 /* XTJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTJAppDelegate.m; sourceTree = "<group>"; };
 		FE4B6BBF157E8E08009BAA44 /* XTJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTJViewController.h; sourceTree = "<group>"; };
 		FE4B6BC0157E8E08009BAA44 /* XTJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTJViewController.m; sourceTree = "<group>"; };
+		FEC1E2BD15A3939000FA6901 /* XTJHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTJHistoryViewController.h; sourceTree = "<group>"; };
+		FEC1E2BE15A3939000FA6901 /* XTJHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTJHistoryViewController.m; sourceTree = "<group>"; };
 		FEFE858F159A4A2600DE4CDB /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +91,8 @@
 				FE14FEF3159A392C005E49D6 /* XTJEditorViewController.h */,
 				FE14FEF4159A392C005E49D6 /* XTJEditorViewController.m */,
 				FEFE858F159A4A2600DE4CDB /* Storyboard.storyboard */,
+				FEC1E2BD15A3939000FA6901 /* XTJHistoryViewController.h */,
+				FEC1E2BE15A3939000FA6901 /* XTJHistoryViewController.m */,
 			);
 			path = XTJournal;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				FE4B6BBE157E8E08009BAA44 /* XTJAppDelegate.m in Sources */,
 				FE4B6BC1157E8E08009BAA44 /* XTJViewController.m in Sources */,
 				FE14FEF6159A392C005E49D6 /* XTJEditorViewController.m in Sources */,
+				FEC1E2BF15A3939000FA6901 /* XTJHistoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
