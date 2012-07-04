@@ -18,6 +18,7 @@ NSString *today;
 
 @synthesize titleBarText;
 @synthesize textView;
+@synthesize dataStore;
 @synthesize date = _date;
 
 -(void) setDate:(NSDate *)date
@@ -29,16 +30,23 @@ NSString *today;
     _date = date;
 }
 
-@synthesize initialEditMode = _initialEditMode;
+@synthesize startsInEditMode = _startsInEditMode;
 
--(void) setInitialEditMode:(bool)initialEditMode
+-(void) setStartsInEditMode:(bool)startsInEditMode
 {
-    _initialEditMode = initialEditMode;
-    if(_initialEditMode && (textView != nil))
+    _startsInEditMode = startsInEditMode;
+    if(_startsInEditMode && (textView != nil))
         [textView becomeFirstResponder];
 }
 
-@synthesize dataStore;
+@synthesize isReadOnly = _isReadOnly;
+
+-(void)setIsReadOnly:(bool)isReadOnly
+{
+    _isReadOnly = isReadOnly;
+    if(textView != nil)
+        [textView setEditable:!_isReadOnly];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -65,12 +73,15 @@ NSString *today;
     NSString *text = [dataStore objectForKey:today];
     [textView setText:text];
     
-    if(_initialEditMode)
+    [textView setEditable:!_isReadOnly];
+    
+    if(_startsInEditMode)
     {
         [textView becomeFirstResponder];
         NSRange range = NSMakeRange(textView.text.length - 1, 1);
         [textView scrollRangeToVisible:range];
     }
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XTJHistoryViewController : UIViewController
+@interface XTJHistoryViewController : UITableViewController <UITableViewDataSource>
 
 @property (strong, nonatomic) NSMutableDictionary* dataStore;
 

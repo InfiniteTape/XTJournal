@@ -12,7 +12,8 @@
 
 @property (strong, nonatomic) NSDate* date;
 @property (strong, nonatomic) NSMutableDictionary* dataStore;
-@property (nonatomic) bool initialEditMode;
+@property (nonatomic) bool startsInEditMode;
+@property (nonatomic) bool isReadOnly;
 
 @property (strong, nonatomic) IBOutlet UINavigationItem* titleBarText;
 @property (strong, nonatomic) IBOutlet UITextView* textView;

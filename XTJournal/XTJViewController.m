@@ -86,7 +86,8 @@
         // Leave the Date value as an NSDate for now. Eventually we'll want it for the Core Data implementation
         [destination setValue:dateNow forKey:@"date"];
         //TODO: Fix this when Xcode 4.4 comes out.
-        [destination setValue:[NSNumber numberWithBool:YES] forKey:@"initialEditMode"];
+        [destination setValue:[NSNumber numberWithBool:YES] forKey:@"startsInEditMode"];
+        [destination setValue:[NSNumber numberWithBool:NO] forKey:@"isReadOnly"];
         
         NSString *dateAsString;
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
@@ -97,6 +98,10 @@
         [destination setValue:dataStore forKey:@"dataStore"];
 
     }    
+    else if([segue.identifier isEqualToString:@"History"])
+    {
+        [destination setValue:dataStore forKey:@"dataStore"];
+    }
 }
 
 - (NSString *)dataFilePath
